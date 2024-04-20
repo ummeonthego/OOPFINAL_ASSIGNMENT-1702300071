@@ -1,10 +1,10 @@
-import java.util.*; //importing Util class to use scanner and Arraylist
+import java.util.*; //importing Util class for scanner and ArrayList
 
 
 class Inventory {
     private ArrayList<Book> books; // arrayList containing objects of Book class
 
-    // non-parameterized constructor for inventory
+    // defconstructor for inventory
     public Inventory() {
         this.books = new ArrayList<>();
     }
@@ -13,7 +13,7 @@ class Inventory {
         books.add(book);
     }
 
-    // updating product quantity
+    // updat product quant
     public void updateQuantity(int productID, int quantity) {
         for (Book book : books) {
             if (book.getProductID() == productID) {
