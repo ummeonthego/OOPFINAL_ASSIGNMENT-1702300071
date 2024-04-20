@@ -81,7 +81,7 @@ public class Main {
                     system.saveSalesHistory();
                     system.saveCustomerInfo();
                     system.saveRequests(); // Save customer requests
-                    System.out.println("Thank you for visiting your store. Please visit again!");
+                    System.out.println("Thank you for visiting our store. Please visit again!");
                     break;
                 default:
                     System.out.println("Invalid choice");
