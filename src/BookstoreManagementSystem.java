@@ -31,10 +31,14 @@ public class BookstoreManagementSystem {
         } else {
             System.out.println("Requests for unavailable books:");
             for (CustomerRequest request : customerRequests) {
-                System.out.println(request);
+                System.out.println("Book ID: " + request.getBookID());
+                System.out.println("Title: " + request.getTitle());
+                System.out.println("Author: " + request.getAuthor());
+                System.out.println("--------------------------");
             }
         }
     }
+
 
     public void saveRequests() {
         try (PrintWriter writer = new PrintWriter(new FileWriter(REQUESTS_FILE))) {
